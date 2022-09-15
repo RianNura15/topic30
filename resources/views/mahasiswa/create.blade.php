@@ -24,7 +24,7 @@
  @csrf
  <div class="form-group">
  <label for="Nim">Nim</label>
- <input type="text" name="Nim" class="form-control" id="Nim" aria-describedby="Nim" >
+   <input type="text" name="Nim" class="form-control" id="Nim" aria-describedby="Nim" >
  </div>
  <div class="form-group">
  <label for="Nama">Nama</label>
