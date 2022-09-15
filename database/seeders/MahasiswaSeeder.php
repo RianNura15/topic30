@@ -14,6 +14,6 @@ class MahasiswaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('mahasiswa')->update(['kelas_id' => 1]);
+        // DB::table('mahasiswa')->update(['kelas_id' => 1]);
     }
 }

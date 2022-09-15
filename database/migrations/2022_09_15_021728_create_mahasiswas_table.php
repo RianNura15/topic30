@@ -14,13 +14,12 @@ class CreateMahasiswasTable extends Migration
     public function up()
     {
         Schema::create('mahasiswa', function (Blueprint $table) {
-            $table->id();
-            // $table->dropColumn('kelas');
-            $table->unsignedBiginteger('kelas_id')->nullable();
-            $table->string('nama')->nullable();
-            $table->string('nim',20)->nullable();
+            $table->id('id_mahasiswa');
+            $table->string('nim')->index();
+            $table->string('nama')->index();
+            $table->string('kelas')->nullable();
             $table->string('jurusan')->nullable();
-            $table->foreign('kelas_id')->references('id')->on('kelas');
+
             $table->timestamps();
         });
     }
@@ -32,9 +31,6 @@ class CreateMahasiswasTable extends Migration
      */
     public function down()
     {
-        Schema::table('mahasiswa', function (Blueprint $table) {
-            $table->string('kelas');
-            // $table->dropForeign(['kelas_id']);
-        });
+        Schema::dropIfExists('mahasiswa');
     }
 }
