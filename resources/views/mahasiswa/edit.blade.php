@@ -28,8 +28,8 @@
 >nim }}" aria-describedby="Nim" >
  </div>
  <div class="form-group">
- <label for="Nama">Nama</label>
- <input type="text" name="Nama" class="form-control" id="Nama" value="{{ $Mahasiswa-
+  <label for="Nama">Nama</label>
+  <input type="text" name="Nama" class="form-control" id="Nama" value="{{ $Mahasiswa-
 >nama }}" aria-describedby="Nama" >
  </div>
  <div class="form-group">
