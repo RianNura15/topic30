@@ -4,9 +4,9 @@
 
 <div class="container mt-5">
 
- <div class="row justify-content-center align-items-center">
- <div class="card" style="width: 24rem;">
- <div class="card-header">
+    <div class="row justify-content-center align-items-center">
+    <div class="card" style="width: 24rem;">
+    <div class="card-header">
  Tambah Mahasiswa
  </div>
  <div class="card-body">
